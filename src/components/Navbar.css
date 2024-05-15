@@ -1,0 +1,43 @@
+nav {
+    background: #F5F5F5; /* Light grey background */
+    padding: 10px 20px; /* Padding around the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset default margin */
+    display: flex;
+    justify-content: left; /* Center navigation items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Uniform spacing between items */
+}
+
+nav ul li a {
+    padding: 10px 15px; /* Larger clickable area */
+    text-decoration: none;
+    color: #333333; /* Dark grey color */
+    font-family: Arial, sans-serif; /* Modern font */
+    font-size: 16px; /* Slightly larger font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #f6b81b; /* Change color on hover and active */
+    font-weight: bold; /* Make active and hover bold */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the navigation items vertically on small screens */
+        align-items: left; /* Align items to the center */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+}

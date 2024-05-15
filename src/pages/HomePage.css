@@ -1,0 +1,48 @@
+.homePage {
+    text-align: left;
+    padding: 20px;
+}
+
+body {
+    background-color: #FAF9F6; /* Example color: light gray */
+}
+
+.intro {
+    display: flex;
+    align-items: center;  /* Center items vertically */
+    justify-content: center;  /* Center the flex container horizontally */
+    gap: 20px;  /* Space between text and image */
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.typewriter-container {
+    width: 400px;  /* Adjust the width based on the expected length of the text */
+}
+
+.profile-pic {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;  /* Prevent the image from resizing */
+}
+
+.about {
+    margin-top: 60px;
+    color: #666;
+    font-size: 16px;
+    width: 50%;  /* Adjust to control the width */
+    margin-left: auto;
+    margin-right: auto;  /* Center the paragraph */
+}
+
+@media (max-width: 600px) {
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .about {
+        margin-top: 20px;
+    }
+}
