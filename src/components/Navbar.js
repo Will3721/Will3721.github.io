@@ -4,10 +4,10 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="content-align">
             <ul>
                 <li>
-                    <NavLink to="/" end>Home</NavLink>
+                    <NavLink to="/" end>William Qi</NavLink>
                 </li>
                 <li>
                     <NavLink to="/projects">Projects</NavLink>

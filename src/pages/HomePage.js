@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import { useState, useEffect } from 'react';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
     return (
@@ -13,14 +14,16 @@ const HomePage = () => {
             </div>
             <p className="about">
                 I'm a senior at the University of Pennsylvania pursuing a BSE in Electrical Engineering and an MSE in Data Science, 
-                along with a minor in Computer Science. I love solving problems and learning new skills, and I'm interested in 
-                machine learning and data science. I have previous internship experience in software engineering and research experience 
+                along with a minor in Computer Science. I love solving problems and am an avid learner. Currently, I'm interested in 
+                machine learning and data science, and using these tools to solve real-world problems. I have previous 
+                internship experience in software engineering and research experience 
                 using signal processing.
             </p>
             <p className="about">
-                In my spare time, I enjoy watching sports, playing ping pong, and working out. I also love listening to music and
-                playing the violin. 
+                In my spare time, I enjoy watching sports (mainly basketball and football), playing ping pong, and working out. 
+                I also love listening to music and playing my violin.
             </p>
+            <Footer />
         </div>
     );
 };

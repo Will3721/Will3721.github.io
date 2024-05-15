@@ -12,9 +12,11 @@ body {
     align-items: center;  /* Center items vertically */
     justify-content: center;  /* Center the flex container horizontally */
     gap: 20px;  /* Space between text and image */
+    margin-top: 40px;  /* Increase this value to add more space */
     margin-bottom: 40px;
     font-size: 22px;
 }
+
 
 .typewriter-container {
     width: 400px;  /* Adjust the width based on the expected length of the text */
@@ -29,7 +31,8 @@ body {
 }
 
 .about {
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     color: #666;
     font-size: 16px;
     width: 50%;  /* Adjust to control the width */
@@ -37,12 +40,22 @@ body {
     margin-right: auto;  /* Center the paragraph */
 }
 
+@media (max-width: 768px) {
+    .intro, nav {
+        margin-top: 20px;  /* Smaller margin for intro */
+        margin-bottom: 20px;  /* Smaller margin for nav */
+    }
+    .content-align {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about, .header {
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 600px) {
     .header {
         margin-bottom: 20px;
-    }
-
-    .about {
-        margin-top: 20px;
     }
 }
