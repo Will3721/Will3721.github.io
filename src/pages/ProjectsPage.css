@@ -1,0 +1,30 @@
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 90%; /* Adjust based on your design preference */
+    max-width: 600px; /* Ensures that cards do not become too wide */
+}
+
+.project-image img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px; /* Space between the image and the details */
+}
+
+.project-info {
+    flex: 1;
+    padding: 10px;
+}
+
+h3, p {
+    margin: 5px 0; /* Vertical spacing */
+}

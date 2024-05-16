@@ -1,58 +1,46 @@
 nav {
-    background: #F5F5F5; /* Light grey background */
-    padding: 10px 20px; /* Padding around the navbar */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+    background: #F5F5F5;
+    padding: 10px 0; /* Removed horizontal padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     display: flex;
     justify-content: left;
 }
 
-.content-align {
-    padding-left: 24%; /* Adjust this value based on your layout */
-    padding-right: 24%;
-}
-
-nav ul {
+.nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0; /* Reset default margin */
+    padding: 0 24%; /* Apply 24% padding to both sides */
+    margin: 0;
     display: flex;
-    justify-content: space-between; /* Center navigation items horizontally */
+    justify-content: space-between; /* Keep Home on left, group on right */
     width: 100%;
 }
 
+.right-links {
+    display: flex; /* Ensures that Projects and Resume are aligned horizontally */
+}
 
-
-nav ul li a {
-    padding: 10px 15px; /* Larger clickable area */
+.nav-links li a {
+    padding: 10px 15px;
     text-decoration: none;
-    color: #333333; /* Dark grey color */
-    font-family: Arial, sans-serif; /* Modern font */
-    font-size: 16px; /* Slightly larger font size */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+.nav-links li a:hover,
+.nav-links li a.active {
     color: #0077cc;
-    font-weight: bold; /* Make active and hover bold */
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
-    .main-container {
-        width: 100%;  /* Make the container full-width on smaller screens */
-        padding: 0 10px; /* Optional padding to prevent content from touching the screen edges */
+    .nav-links {
+        padding: 0 10px; /* Smaller padding on smaller screens */
+        flex-direction: column;
+        align-items: flex-start;
     }
-
-    nav ul {
-        flex-direction: column; /* Stack the navigation items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
-    }
-}
-
-@media (max-width: 768px) {
-    .content-align {
-        padding-left: 10px;
-        padding-right: 10px;
+    .right-links {
+        flex-direction: column;
     }
 }
-

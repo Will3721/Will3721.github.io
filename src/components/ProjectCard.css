@@ -1,0 +1,84 @@
+.project-info h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.project-info p {
+    margin: 5px 0;
+    color: #414146;
+}
+
+.project-date {
+    font-size: 0.9em; /* Smaller font size for the date */
+    color: #6e6e6e !important; /* Optionally change the color to distinguish it further */
+}
+
+.language-container {
+    margin-bottom: 10px;
+}
+
+.language-tag {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.project-info h3 a {
+    margin-left: 10px;
+    color: #333;
+}
+
+.project-info h3 a:hover {
+    color: #007BFF;
+}
+
+@keyframes dropAndScale {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px) scaleY(0.1); /* Start above and flattened */
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-25px) scaleY(0.5); /* Mid transition, less flattened */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1); /* End at the final position and full size */
+    }
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: calc(50% - 20px);
+    overflow: hidden;
+    animation: dropAndScale 0.8s ease-out forwards; /* Apply the animation */
+}
+
+.project-image img {
+    width: 150px;
+    height: auto;
+    border-right: 1px solid #eee;
+    border-radius: 10%;
+    margin-left: 20px;
+}
+
+.language-container {
+    margin-bottom: 10px;
+}
