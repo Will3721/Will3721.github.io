@@ -10,14 +10,14 @@
     align-items: center;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 90%; /* Adjust based on your design preference */
-    max-width: 600px; /* Ensures that cards do not become too wide */
+    width: 90%;
+    max-width: 600px;
 }
 
 .project-image img {
     width: 150px;
     height: auto;
-    margin-right: 20px; /* Space between the image and the details */
+    margin-right: 20px;
 }
 
 .project-info {
@@ -26,5 +26,23 @@
 }
 
 h3, p {
-    margin: 5px 0; /* Vertical spacing */
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    .project-card {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .project-image img {
+        width: auto;
+        max-width: 150px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .project-info {
+        text-align: left;
+    }
 }

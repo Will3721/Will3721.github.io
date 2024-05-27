@@ -5,7 +5,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const ProjectCard = ({ project, index }) => {
-    const hasGitHubLink = project.github; // Assuming there's a 'github' property in your project object
+    const hasGitHubLink = project.github;
 
     return (
         <div className="project-card" style={{ animationDelay: `${index * 0.1}s` }}>

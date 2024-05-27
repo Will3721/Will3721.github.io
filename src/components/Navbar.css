@@ -1,6 +1,6 @@
 nav {
     background: #F5F5F5;
-    padding: 10px 0; /* Removed horizontal padding */
+    padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     display: flex;
     justify-content: left;
@@ -8,15 +8,15 @@ nav {
 
 .nav-links {
     list-style: none;
-    padding: 0 24%; /* Apply 24% padding to both sides */
+    padding: 0 24%;
     margin: 0;
     display: flex;
-    justify-content: space-between; /* Keep Home on left, group on right */
+    justify-content: space-between;
     width: 100%;
 }
 
 .right-links {
-    display: flex; /* Ensures that Projects and Resume are aligned horizontally */
+    display: flex;
 }
 
 .nav-links li a {
@@ -36,7 +36,7 @@ nav {
 
 @media (max-width: 768px) {
     .nav-links {
-        padding: 0 10px; /* Smaller padding on smaller screens */
+        padding: 0 10px;
         flex-direction: column;
         align-items: flex-start;
     }
