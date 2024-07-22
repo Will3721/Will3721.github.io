@@ -4,7 +4,7 @@ import './ProjectsPage.css';
 
 const projects = [
     { id: 1, name: 'AutoAvenue', date: 'March - May 2024', languages: ['SQL', 'React', 'Node.js'], 
-    description: 'Web application backed by a MySQL database that allows users to check and compare used car prices and reviews across the market. Users can set preferences for price, mileage, year, and MPG to view all cars meeting those specifications, complete with pictures and additional details. Bonus features include car rankings based on various criteria such as durability and safety, and a search function for efficient and economical cars.', 
+    description: 'A car review and search platform backed by a MySQL database that allows users to check and compare used car prices and reviews across the market. Users can set preferences for price, mileage, year, and MPG to view all cars meeting those specifications, complete with pictures and additional details. Bonus features include car rankings based on various criteria such as durability and safety, and a search function for efficient and economical cars.', 
     image: '/AutoAvenue.webp',
     github: 'https://github.com/Will3721/AutoAvenue' },
     
@@ -21,7 +21,7 @@ const projects = [
     description: 'We gathered and analyzed data on NBA Hall-of-Fame inductees and leading college basketball players from each team for a specific year and developed a recommendation system for draft picks from user-selected draft classes, identifying candidates most similar to the average NBA Hall-of-Famer profile.', 
     image: 'nbahof.png', github: 'https://github.com/Will3721/NBA-Draft-Picker'},
     { id: 6, name: '2048', date: 'April - May 2022', languages: ['Java', 'Java Swing'], 
-    description: 'The classic 2048 game with added features such as the ability to undo the last move and being able to save and load the game state.', 
+    description: 'I recreated the classic 2048 game with added features such as the ability to undo the last move and being able to save and load the game state.', 
     image: '2048.png', github: 'https://github.com/Will3721/2048-Game' },
 ];
 

@@ -9,7 +9,7 @@ const ResumePage = () => {
             height: '100vh'
         }}>
             <iframe
-                src="/WillQiResume.pdf"
+                src="/William Qi Resume.pdf"
                 title="Resume"
                 style={{
                     width: "80%", 
