@@ -14,7 +14,7 @@ const Navbar = () => {
                         <NavLink to="/projects">Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/resume">Resume</NavLink>
+                        <a href="/William_Qi_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                     </li>
                 </div>
             </ul>
